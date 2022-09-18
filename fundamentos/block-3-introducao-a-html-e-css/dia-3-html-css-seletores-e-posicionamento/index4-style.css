@@ -1,0 +1,30 @@
+ol li{
+    background-color: yellow;
+}
+
+li.par {
+    color: green;
+}
+
+li.impar{
+    text-transform: uppercase;
+}
+
+h1, h2, h3{
+    color: red;
+
+}
+
+h1.italico{
+    font-size: 40px;
+    border: 10px, black, solid;
+}
+
+li{
+    font-size: 20px;
+
+}
+
+li.par.ita{
+    font-weight: bold;
+}
