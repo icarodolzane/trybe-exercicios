@@ -9,4 +9,18 @@
 ***** */
 
 
+let stringDeAsteriscos = '';
+let asterisco = '*';
+let n = 10;
+
+for(let index = 0; index < n; index+=1){
+   stringDeAsteriscos = stringDeAsteriscos + asterisco;
+   
+}
+
+for(let index = 0; index < n; index+=1){
+    console.log(stringDeAsteriscos);
+ }
+
+
 
