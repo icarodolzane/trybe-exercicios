@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Exercício</title>
-    
     <style>
-      main, section {
+      section {
         border-color: black;
         border-style: solid;
       }
@@ -22,32 +21,44 @@
       .main-content .center-content {
         background-color: red;
         width: 50%;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       .main-content .center-content p {
         font-style: italic;
       }
-      #meInTheFuture{
-        color: rgb(84, 0, 0);
-        text-align: center;
-        font-weight: bold;
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
       }
-      
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+        
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
-    <header> 
-      <h1 class="title">Exercício - JavaEscripito </h1>
-    </header>    
-    <main class="main-content">
-      <section class="center-content">
-        <p>Texto padrão do nosso site</p>
-        <p id="meInTheFuture">-----</p>
-        <p>Trybe</p>
-      </section>
-    </main>
-    <script src="script.js">    
+    <script src="script.js">
+      
     </script>
   </body>
 </html>
