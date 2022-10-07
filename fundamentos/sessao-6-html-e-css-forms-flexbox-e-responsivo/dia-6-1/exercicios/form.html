@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Exercice</title>
+</head>
+<body>
+    <header id="theHeader">
+        <h1>TRYBE FORM</h1>
+        <h2>Quer ganhar uma viagem com tudo pago e mais um acompanhante para qualquer lugar do Brasil por conta da TRYBE?</h2>
+        <p>
+            Participe da nossa promoção e responda:
+            Qual foi sua maior experiência e mudança na sua vida com a TRYBE?
+            O autor da melhor resposta ganhará uma viagem (e companhante) para qualquer lugar do Brasil com TUDO na faixa e por conta da Trybe.
+        </p>
+
+    </header>
+    <main id="main-center">
+
+        <section id="nameAndEmail">
+
+            <label for="userName">
+                Nome:<input required type="text" name="username" id="userName">
+            </label>
+            <br>
+            <br>
+            <label for="userEmail">
+                Email: <input required type="email" name="e-mail" id="userEmail">
+            </label>
+        <br>
+        <br>
+        </section>
+
+        <section id="class-option">
+            Indique sua turma:
+            <br>
+            <br>
+            <label for="class27a" >
+                <input id = 'class27a'name = 'trybe-class'value="turmaA" type="radio">
+            Turma 27 - Tribo A 
+            </input>
+            </label>
+            
+            <label for="class27b" >
+                <input id = 'class27b'name = 'trybe-class'value="turmaB"type="radio">
+            Turma 27 - Tribo B 
+            </input>
+            </label>
+            <label for="class28a" >
+                <input id = 'class28a'name = 'trybe-class'value="turmaA"type="radio">
+            Turma 28 - Tribo A 
+            </input>
+            </label>
+            <label for="class28b">
+                <input id = 'class28b'name = 'trybe-class'value="turmaB" type="radio">
+            Turma 28 - Tribo B 
+            </input>
+            </label>
+        </section>
+        <section id="userAnswer">
+            <br>
+            Escreva aqui a sua resposta:
+            <label for="answer">
+                <br>
+                <br>
+                <textarea id="answer" cols="60" rows="10">Responda aqui qual foi sua maior experiência e mudança de vida com a TRYBE?
+                </textarea>
+            </label>
+        </section>   
+        <sec id="date">
+        
+            <label for="dt"> Informa a melhor data para sua viagem: <input id="dt" type="date"></label>
+        </section>
+        <section id="agreement-term">
+            <br>
+            <br>
+            <label for="agreement1" >
+                <input id = 'agreement1'name = 'agreement'value="information" type="checkbox">
+                Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+            </input>
+            </label>
+            <br>
+            <label for="agreement2" >
+                <input required id = 'agreement2'name = 'agreement'value="image-rights"type="checkbox">
+                Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+            </input>
+            </label>
+            <br>
+            <label for="agreement3" >
+                <input required id = 'agreement3'name = 'agreement'value="conduct-term"type="checkbox">
+                Concordo que os termos de escolha do ganhador e critérios do concurso são de exclusividade da Trybe.
+            </input>
+            </label>
+
+        </section>
+    </main>
+    <section id="buttons">
+        <button type="submit" id="" class=""> Enviar </button>
+        <button type="reset" id="" class=""> Apagar </button>
+        
+    </section>
+    
+    
+</body>
+</html>
