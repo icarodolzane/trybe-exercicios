@@ -17,91 +17,91 @@
         </p>
 
     </header>
-    <main id="main-center">
-
+    <form id="form" action="#">
+    <fieldset id="trybe-form" >
         <section id="nameAndEmail">
-
+            
             <label for="userName">
-                Nome:<input required type="text" name="username" id="userName">
+                Nome:<input minlength="10" maxlength="40" required type="text" name="username" id="userName">
             </label>
             <br>
             <br>
             <label for="userEmail">
-                Email: <input required type="email" name="e-mail" id="userEmail">
+                Email: <input minlength="10" maxlength="40" required type="email" name="e-mail" id="userEmail">
             </label>
-        <br>
-        <br>
+            <br>
+            <br>
         </section>
-
+        
         <section id="class-option">
             Indique sua turma:
             <br>
             <br>
             <label for="class27a" >
                 <input id = 'class27a'name = 'trybe-class'value="turmaA" type="radio">
-            Turma 27 - Tribo A 
+                Turma 27 - Tribo A 
             </input>
-            </label>
-            
-            <label for="class27b" >
+        </label>
+        
+        <label for="class27b" >
                 <input id = 'class27b'name = 'trybe-class'value="turmaB"type="radio">
-            Turma 27 - Tribo B 
+                Turma 27 - Tribo B 
             </input>
-            </label>
-            <label for="class28a" >
-                <input id = 'class28a'name = 'trybe-class'value="turmaA"type="radio">
+        </label>
+        <label for="class28a" >
+            <input id = 'class28a'name = 'trybe-class'value="turmaA"type="radio">
             Turma 28 - Tribo A 
-            </input>
-            </label>
-            <label for="class28b">
-                <input id = 'class28b'name = 'trybe-class'value="turmaB" type="radio">
+        </input>
+        </label>
+        <label for="class28b">
+            <input id = 'class28b'name = 'trybe-class'value="turmaB" type="radio">
             Turma 28 - Tribo B 
-            </input>
-            </label>
+        </input>
+        </label>
         </section>
         <section id="userAnswer">
-            <br>
-            Escreva aqui a sua resposta:
-            <label for="answer">
-                <br>
-                <br>
-                <textarea id="answer" cols="60" rows="10">Responda aqui qual foi sua maior experiência e mudança de vida com a TRYBE?
-                </textarea>
-            </label>
-        </section>   
-        <sec id="date">
-        
-            <label for="dt"> Informa a melhor data para sua viagem: <input id="dt" type="date"></label>
-        </section>
-        <section id="agreement-term">
-            <br>
-            <br>
-            <label for="agreement1" >
-                <input id = 'agreement1'name = 'agreement'value="information" type="checkbox">
+        <br>
+        <p> Responda aqui qual foi sua maior experiência e mudança de vida com a TRYBE?</p>
+        <label for="answer">
+            <textarea required maxlength="500" id="answer" cols="60" rows="10" placeholder="Escreva aqui sua resposta:"></textarea>
+        </label>
+    </section>   
+</fieldset>
+<sec id="date">
+    
+    <label for="dt"> Informa a melhor data para sua viagem: <input id="dt" type="date"></label>
+</section>
+<section id="agreement-term">
+    <br>
+    <br>
+    <label for="agreement1" >
+        <input id = 'agreement1'name = 'agreement'value="information" type="checkbox">
                 Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
             </input>
-            </label>
-            <br>
-            <label for="agreement2" >
-                <input required id = 'agreement2'name = 'agreement'value="image-rights"type="checkbox">
-                Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
-            </input>
-            </label>
-            <br>
+        </label>
+        <br>
+        <label for="agreement2" >
+            <input required id = 'agreement2'name = 'agreement'value="image-rights"type="checkbox">
+            Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+        </input>
+    </label>
+    <br>
             <label for="agreement3" >
                 <input required id = 'agreement3'name = 'agreement'value="conduct-term"type="checkbox">
                 Concordo que os termos de escolha do ganhador e critérios do concurso são de exclusividade da Trybe.
             </input>
-            </label>
-
-        </section>
-    </main>
-    <section id="buttons">
-        <button type="submit" id="" class=""> Enviar </button>
-        <button type="reset" id="" class=""> Apagar </button>
+        </label>
         
     </section>
+    </form>
+    <section id="buttons">
+        <button type="submit" id="submitBtn" class="" disabled> Enviar </button>
+        <button type="reset" id="resetBt" class=""> Apagar </button>
+            
+    </section>
     
-    
+<script src="./script.js">
+
+</script>
 </body>
 </html>
