@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<body>
+  <button id="button_test">click aqui!</button>
+  <div>
+    <span id="text"></span>
+  </div>
+</body>
+<script>
+
+    let clickCount = 0;
+    const getButton = document.querySelector('#button_test');
+    const getSpan = document.getElementById('text');
+    
+    const contaClique = (event) => {
+        clickCount= clickCount + 1;
+        console.log(clickCount);
+        getSpan.innerText = (`Você já clicou ${clickCount} vezes!!!`);
+    }
+
+    const alertCliques = () => {
+        if(clickCount===10){
+            alert("Chega de cliques!");
+        }
+    }
+    
+    window.onload = () => {
+        getButton.addEventListener('click', contaClique);
+        (clickCount > 10) ? alert('Chega de cliques!!!') : getButton.addEventListener('click', contaClique);
+        alertCliques();
+    }
+
+    
+    
+
+
+</script>
+</html>
