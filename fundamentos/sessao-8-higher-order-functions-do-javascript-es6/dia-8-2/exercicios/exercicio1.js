@@ -20,7 +20,7 @@ const books = [
     genre: 'Fantasia',
     author: {
       name: 'J. R. R. Tolkien',
-      birthYear: 1892,
+      birthYear: 1948,
     },
     releaseYear: 1954,
   },
@@ -30,7 +30,7 @@ const books = [
     genre: 'Ficção Científica',
     author: {
       name: 'Isaac Asimov',
-      birthYear: 1920,
+      birthYear: 1948,
     },
     releaseYear: 1951,
   },
@@ -40,7 +40,7 @@ const books = [
     genre: 'Ficção Científica',
     author: {
       name: 'Frank Herbert',
-      birthYear: 1920,
+      birthYear: 1948,
     },
     releaseYear: 1965,
   },
@@ -50,7 +50,7 @@ const books = [
     genre: 'Terror',
     author: {
       name: 'Stephen King',
-      birthYear: 1947,
+      birthYear: 1948,
     },
     releaseYear: 1986,
   },
@@ -60,7 +60,7 @@ const books = [
     genre: 'Terror',
     author: {
       name: 'H. P. Lovecraft',
-      birthYear: 1890,
+      birthYear: 1948,
     },
     releaseYear: 1928,
   },
@@ -159,5 +159,47 @@ const checkIfIsXXCentury = (date) => date >= 1901 && date <= 2000;
 function everyoneWasBornOnSecXX(){
   return books.every(book => checkIfIsXXCentury(book.author.birthYear));
 }
-console.log(everyoneWasBornOnSecXX());
+/* console.log(everyoneWasBornOnSecXX()); */
+
+/* 
+todo Faça uma função que retorne true, se algum livro foi lançado na década de 80, e false, caso contrário.
+*/
+const checkIfIsIn80s = (date) => date >= 1980 && date <= 1989;
+
+function someBookWasReleaseOnThe80s() {
+  // escreva seu código aqui
+  return books.some(book => checkIfIsIn80s(book.releaseYear));
+}
+
+/* console.log(someBookWasReleaseOnThe80s()); */
+
+/* 
+todo Faça uma função que retorne true, caso nenhum author tenha nascido no mesmo ano, e false, caso contrário.
+*/
+
+
+/* 
+???? procurar o erro nesse exercício
+*/
+function authorUnique() {
+  // escreva seu código aqui
+  return books.every((book) =>
+    !books.some((bookSome) =>
+    (bookSome.author.birthYear === book.author.birthYear) &&
+    (bookSome.author.name !== book.author.name)));
+}
+
+/* 
+???? procurar o erro nesse exercício
+*/
+
+
+console.log(authorUnique());
+
+
+
+
+
+
+
 
