@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 400px;
+  height: 800px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hero-frame{
+  width: 80%;
+  height: 40%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-description-frame{
+  width: 80%;
+  height: 20%;
+  border: 1px solid black;
+}
+
+.image-hero{
+  width: 90%;
+  height: 90%;
+}
