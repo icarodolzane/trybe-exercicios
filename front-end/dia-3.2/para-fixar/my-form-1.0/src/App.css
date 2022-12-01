@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+form{
+  margin: 20px;
+}
+
+fieldset{
+  gap: 10px;
+  margin: 20px;
+  display: flex;
+
+}
+
+textarea {
+  resize: none;
+}
