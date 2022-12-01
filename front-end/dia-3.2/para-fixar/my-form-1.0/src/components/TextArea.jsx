@@ -16,7 +16,6 @@ class TextArea extends Component{
             onChange={handleChange}
             rows={MAX_ROWS}
             cols={MAX_COLS}
-            onResize={'none'}
           />
       </fieldset>
     )
